@@ -12,6 +12,7 @@ const tuple = [1, 2, 3, 'hello'] as const;
 // I may have missed something, but here are my main frustrations:
 // 1) The PropertyKey type is briefly mentioned but never detailed. I had to search the web to find out that PropertyKey = string | number | symbol
 // 2) There is no clear documentation of the `in` operator below. I understand now that it can iterate over the elements of an array, but the docs really only cover [K in keyof T] examples, so it's basically trial and error to understand other use cases for it.
+// My current understanding is that `in` can iterate over all elements inside a union type
 type TupleToObject<T extends readonly PropertyKey[]> = {
 	[P in T[number]]: P;
 };
