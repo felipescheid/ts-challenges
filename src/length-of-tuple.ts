@@ -6,8 +6,11 @@
 // type teslaLength = Length<tesla>  // expected 4
 // type spaceXLength = Length<spaceX> // expected 5
 
-type Length<T> = any;
+type Length<T extends readonly any[]> = T['length'];
 
 type characters = [ 'clive', 'jill', 'cid', 'joshua' ];
 
 type cLength = Length<characters>;
+
+// tsc --noEmit {fileName}.ts
+const _assertLength: 4 = (null as unknown) as cLength;
