@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/felipescheid/ts-challenges/issues"
   },
-  "homepage": "https://github.com/felipescheid/ts-challenges#readme"
+  "homepage": "https://github.com/felipescheid/ts-challenges#readme",
+  "devDependencies": {
+    "@types/node": "^22.7.4"
+  }
 }
