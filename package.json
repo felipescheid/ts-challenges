@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/felipescheid/ts-challenges#readme",
   "devDependencies": {
+    "@type-challenges/utils": "^0.1.1",
     "@types/node": "^22.7.4"
   }
 }
